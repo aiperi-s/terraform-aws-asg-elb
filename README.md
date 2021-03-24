@@ -1,5 +1,5 @@
 # Terraform0.14
-This repo is used to work with November Group
+This repo is used to work ASG-ELB
 
 #### Requirements
 #### Please use terraform 0.14.7 or above
@@ -8,7 +8,7 @@ This repo is used to work with November Group
 ```
 module "wordpress" {
   app_name         = "wordpress"
-  source           = "../Class4"
+  source           = "aiperi-s/aws/asg-elb"
   aws_region       = "us-east-1"
   desired_capacity = 1
   max_size         = 1
